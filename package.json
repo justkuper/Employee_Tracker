@@ -1,0 +1,27 @@
+{
+  "name": "employee_tracker",
+  "version": "1.0.0",
+  "description": "An application that allows employers to track employees",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justkuper/Employee_Tracker.git"
+  },
+  "author": "Kuper Bank",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justkuper/Employee_Tracker/issues"
+  },
+  "homepage": "https://github.com/justkuper/Employee_Tracker#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "inquirer": "^8.2.4",
+    "pg": "^8.12.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.3"
+  }
+}
