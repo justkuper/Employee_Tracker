@@ -2,10 +2,11 @@
   "name": "employee_tracker",
   "version": "1.0.0",
   "description": "An application that allows employers to track employees",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "npm test",
-    "start": "node server.js"
+    "start": "node server.js",
+    "seeds": "node db/seeds.sql"
   },
   "repository": {
     "type": "git",

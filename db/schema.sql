@@ -8,8 +8,8 @@ CREATE TABLE departments (
   department_name VARCHAR(30) NOT NULL
 );
 
-CREATE TABLE job_role (
-    job_role_id SERIAL PRIMARY KEY,
+CREATE TABLE job_roles (
+    job_roles_id SERIAL PRIMARY KEY,
     title VARCHAR(30) NOT NULL,
     salary DECIMAL(10, 2) NOT NULL,
     department_id INT NOT NULL,
@@ -22,9 +22,9 @@ CREATE TABLE employees (
     employee_id SERIAL PRIMARY KEY,
     first_name VARCHAR(30) NOT NULL,
     last_name VARCHAR(30) NOT NULL,
-    job_role_id INT NOT NULL,
+    job_roles_id INT NOT NULL,
     manager_id INT,
-    FOREIGN KEY (job_role_id)
-    REFERENCES job_role(job_role_id)
+    FOREIGN KEY (job_roles_id)
+    REFERENCES job_roles(job_roles_id)
     ON DELETE SET NULL
 );
